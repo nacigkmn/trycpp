@@ -6,7 +6,7 @@ int main()
 {
 
     int number1, number2, result;
-    char tegn;
+    char opr;
 
     cout << "Number 1 :";
     cin >> number1;
@@ -14,10 +14,10 @@ int main()
     cout << "Number 2 :";
     cin >> number2;
 
-    cout << "Operator (+,-,/,*,%) =";
-    cin >> tegn;
+    cout << "Operator (+,-,/,*,%) = ";
+    cin >> opr;
 
-    switch (tegn)
+    switch (opr)
     {
     case '+':
         cout << "Result= " << number1 + number2 << endl;
