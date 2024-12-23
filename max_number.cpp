@@ -2,26 +2,35 @@
 
 using namespace std;
 
-int getMax(int num1, int num2)
+int getMax(int num1, int num2, int num3)
 {
-    int max_numb;
+    int maxNumb;
 
-    if(num1>num2) {
-        max_numb=num1;
+    if(num1 >= num2 && num1 >= num3) {
+        maxNumb=num1;
+    }
+    else if(num2 >= num1 && num2 >= num3){
+        maxNumb=num2;
     }
     else{
-        max_numb=num2;
+        maxNumb=num3;
     }
 
-    return max_numb;
+    return maxNumb;
 }
 
 
 int main()
 {
+    int x,y,z;
 
-    int max_numb= getMax(3,7);
-    cout<< "Max number ="<<max_numb;
+    cout << "Enter three numbers = ";
+    cin >> x >> y >> x;
+
+
+
+    int maxNumb= getMax(x,y,z);
+    cout<<"Max number ="<<maxNumb;
 
     return 0;
 
